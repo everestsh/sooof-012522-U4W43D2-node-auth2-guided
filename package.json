@@ -7,12 +7,14 @@
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
     "seed": "knex seed:run",
+    "resetdb": "npm run rollback && npm run migrate && npm run seed",
     "ketchup": "git fetch && git reset --hard origin/lecture"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
     "knex": "^0.95.14",
     "knex-cleaner": "^1.3.1",
     "sqlite3": "^5.0.2"
